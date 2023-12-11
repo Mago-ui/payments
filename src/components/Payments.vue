@@ -122,7 +122,7 @@ export default {
 
 .search-img {
   background: #f7f7f7;
-  padding: 13.1px;
+  padding: 14.1px;
   margin-left: -1px;
   width: 22px;
 }
