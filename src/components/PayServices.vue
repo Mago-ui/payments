@@ -2,7 +2,9 @@
   <div>
     <header class="header">
       <div class="headerPayment">
-        <div class="headerPayment-arrow">🡠</div>
+        <div class="headerPayment-arrow">
+          <img class="arrow" width="23px" src="../assets/arrow.png" />
+        </div>
         <h1 class="header-style">Recargas y Pagos</h1>
       </div>
     </header>
@@ -43,8 +45,8 @@
             style="padding-right: 12px"
             src="../assets/cargando2.png"
           />
-          <router-link to="/recargas" style="text-decoration: none;">
-            <p style="font-weight: 600;">Recargas</p></router-link
+          <router-link to="/recargas" style="text-decoration: none">
+            <p style="font-weight: 600">Recargas</p></router-link
           >
         </div>
         <div class="item">
@@ -150,7 +152,7 @@ export default {
 }
 
 .header-style {
-  width: 80%;
+  width: 87%;
   text-align: center;
   color: white;
   font-size: 21px;
@@ -193,5 +195,12 @@ export default {
   display: flex;
   align-items: center;
   padding-bottom: 21px;
+}
+
+.arrow {
+  width: 34px;
+  position: absolute;
+  top: 18px;
+  height: 43px;
 }
 </style>

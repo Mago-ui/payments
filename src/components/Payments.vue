@@ -3,7 +3,9 @@
     <header class="header">
       <div class="headerPayment">
         <router-link to="/" style="text-decoration: none">
-          <div class="headerPayment-arrow">🡠</div>
+          <div class="headerPayment-arrow">
+            <img class="arrow" width="23px" src="../assets/arrow.png" />
+          </div>
         </router-link>
         <h1 class="header-style">Recargas</h1>
       </div>
@@ -149,6 +151,13 @@ export default {
 .company-product {
   display: flex;
   align-items: center;
+}
+
+.arrow {
+  width: 34px;
+  position: absolute;
+  top: 18px;
+  height: 43px;
 }
 
 ::-webkit-scrollbar {
