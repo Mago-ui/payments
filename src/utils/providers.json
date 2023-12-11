@@ -1,0 +1,63 @@
+{
+    "status": "200",
+    "responseMessage": "success",
+    "data": {
+        "companies": [
+            {
+                "company": "Netflix",
+                "_id": "6425bb0445915e0010834e9b",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/netflix.png"
+            },
+            {
+                "company": "Paysafe Card",
+                "_id": "6425bb0445915e0010834e98",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/paysafecard.png"
+            },
+            {
+                "company": "Bitel",
+                "_id": "6425bb0445915e0010834e84",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/bitel.png"
+            },
+            {
+                "company": "Claro",
+                "_id": "6425bb0445915e0010834e83",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/claro.png"
+            },
+            {
+                "company": "Direct TV",
+                "_id": "6425bb0445915e0010834e89",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/directv.png"
+            },
+            {
+                "company": "Enel",
+                "_id": "6425bb0445915e0010834e87",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/enel.png"
+            },
+            {
+                "company": "Entel",
+                "_id": "6425bb0445915e0010834e85",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/entel.png"
+            },
+            {
+                "company": "Pagoefectivo",
+                "_id": "6425bb0445915e0010834e96",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/pagoefectivo.png"
+            },
+            {
+                "company": "Soat la Positiva",
+                "_id": "6425bb0445915e0010814e96",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/la-positiva.png"
+            },
+            {
+                "company": "America Movil",
+                "_id": "64a2f0896245068576069ed2",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/america-movil.jpg"
+            },
+            {
+                "company": "Flash Mobile",
+                "_id": "6425bb0445915e0010834e8a",
+                "image": "https://integracion-bcp-development.s3.us-west-2.amazonaws.com/images/companies/flash-mobile.png"
+            }
+        ]
+    }
+}
