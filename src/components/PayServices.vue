@@ -72,34 +72,37 @@
 
 <script>
 import axios from "axios";
-import balance from "../utils/balance.json";
 export default {
   data() {
     return {
-      balance: balance.data.balanceCommerce,
+      balance: '',
     };
   },
   mounted() {
-    //*------- Llamada Axios del servicio getActualBalance con autenticación-----*//
-    // axios
-    //   .get(
-    //     "http://bun-burn-env.eba-ftyx2m3h.us-east-1.elasticbeanstalk.com/getActualBalance",
-    //     {
-    //       headers: {
-    //         Authorization:
-    //           "Bearer " +
-    //           "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Indpbmdlcmxpb24uY3VscWkiLCJleHAiOjE3MDY5NDIxNjR9.j7_UICJFBvPiHv_bhnoRNprVU_DaML41Vjmd51jcRDI",
-    //         "Access-Control-Allow-Origin": "*",
-    //         origin: "x-requested-with",
-    //       },
-    //     }
-    //   )
-    //   .then(function (response) {
-    //     console.log(response);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
+    // *------- Llamada Axios del servicio getActualBalance con autenticación-----*//
+    axios
+      .get(
+        "https://aspexpressapi-production.up.railway.app/getActualBalance",
+        {
+          headers: {
+            Authorization:
+              "Bearer " +
+              "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Indpbmdlcmxpb24uY3VscWkiLCJleHAiOjE3MDY5NDIxNjR9.j7_UICJFBvPiHv_bhnoRNprVU_DaML41Vjmd51jcRDI",
+            "Access-Control-Allow-Origin": "*",
+            origin: "x-requested-with",
+          },
+        }
+      )
+      .then(response => {
+        this.balance = response.data.data.balanceCommerce
+        if(response.status == '404'){
+          this.$router.push("/error");
+        }
+        
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   },
 };
 </script>
