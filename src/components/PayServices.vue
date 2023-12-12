@@ -39,6 +39,7 @@
     <section class="separation">
       <hr style="border-top: 1px solid #fdfdfd" />
       <div class="content">
+
         <div class="item">
           <img
             width="32px;"
@@ -72,7 +73,12 @@
 
 <script>
 import axios from "axios";
+//import Card from "./component/card.vue";
 export default {
+ 
+  components: {
+  //  Card,
+  },
   data() {
     return {
       balance: '',
